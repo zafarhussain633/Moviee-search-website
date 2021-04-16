@@ -1,0 +1,203 @@
+body{
+    background-color: #000000ef;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#logo{
+   color: #ff1008ef;
+    margin: 0.2rem 0px 0px 1rem;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+nav{
+    color: wheat;
+    padding: 0.9rem;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0.9rem;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#search{
+   width: 60%;
+   margin:0.8rem;
+   height: 1.8rem;
+   border-radius: 4px;
+   padding: 1rem;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.589);
+}
+#movie{
+   display: grid;
+   grid-template-rows: auto 1fr;
+}
+
+#category{
+    display: flex;
+    justify-content: center;
+    padding: 0.6rem;
+}
+#category>div{
+    margin-left: 5px;
+}
+#best {
+    margin: 5px 0px 2px 6px;
+    font-size: 16px;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#result{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  
+}
+.card{ 
+    margin: 5px;
+    border-radius: 3px;
+    background-color: black;
+
+}
+.card:hover{
+    transition: 0.3s;
+        transform: scale(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+}
+#card-body{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+     align-items: center;
+  
+}
+
+.rating{
+    margin-right: 10px;
+    text-align: center;
+    padding: 2px;
+    font-size: 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid black;
+    font-family: Helvetica;
+
+}
+
+
+
+img{
+    width: 100%;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    
+}
+.title{
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 6px;
+    font-weight: 400;
+    color: wheat;
+}
+.date{
+
+    font-size: 12px;
+    color: wheat;
+    opacity: 0.9;
+
+}
+.getdate{
+    font-size: 10px;
+     color: wheat;
+     opacity: 0.5;
+     margin: 1px;
+}
+.date-area{
+  margin: 5px;
+  padding: 3px;
+}
+b{
+    margin-left: 3rem;
+}
+
+button{
+    background-color: transparent;
+    color: rgba(245, 222, 179, 0.815);
+    padding: 2px 6px 2px 6px;
+    border-radius: 2.5px;
+    font-weight: 400;
+    border: 1.5px solid #ff1008bb;
+}
+footer{
+    color: wheat;
+    opacity: 0.6;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    font-weight: bolder;
+    padding: 1rem;
+
+}
+
+@media(max-width:700px){
+    #result{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin:7px;
+    }
+    #logo{
+         margin: 0.7rem 0px 0px 0.1rem;
+         font-size: 1.3rem;
+     }
+     button{
+            font-size: 11.7px;
+    }
+    nav{
+      
+        padding: 0.3rem;
+        font-size: 1.2rem;
+        margin-top: 0.6rem;
+        font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #search{
+        width: 65%;
+        margin:0.6rem;
+        height: 1.2rem;
+        border-radius: 4px;
+        padding: 0.8rem;
+     }
+     .card{ 
+        margin: 4px;
+        border-radius: 3px;
+        background-color: black;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: auto;
+    
+    }
+}
+
+@media(min-width:700px){
+    #result{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  1fr;
+        margin:7px;
+    }
+}
+@media(min-width:950px){
+    #result{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin:7px;
+    }
+}
+@media(min-width:1350px){
+    #result{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin:7px;
+    }
+}
+
+
