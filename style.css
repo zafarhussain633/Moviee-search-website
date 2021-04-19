@@ -12,7 +12,7 @@ html, body {
     font-family: cursive;
 }
 nav{
-    color: wheat;
+    color: #fdfaed;
     padding: 0.9rem;
     text-align: center;
     font-size: 24px;
@@ -45,23 +45,26 @@ nav{
 #best {
     margin: 5px 0px 2px 6px;
     font-size: 16px;
-    color: wheat;
+    color: #fdfaed;
     font-family: Arial, Helvetica, sans-serif;
 }
 #result{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
 }
+
 .card{ 
     margin: 5px;
     border-radius: 3px;
     background-color: black;
+    width: 11rem;
 
 }
 .card:hover{
     transition: 0.3s;
-        transform: scale(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     
 }
 #card-body{
@@ -98,18 +101,18 @@ img{
     text-align: center;
     margin-top: 6px;
     font-weight: 400;
-    color: wheat;
+    color: #fdfaed;
 }
 .date{
 
     font-size: 12px;
-    color: wheat;
+    color: #fdfaed;
     opacity: 0.9;
 
 }
 .getdate{
     font-size: 10px;
-     color: wheat;
+     color: #fdfaed;
      opacity: 0.5;
      margin: 1px;
 }
@@ -130,7 +133,7 @@ button{
     border: 1.5px solid #ff1008bb;
 }
 footer{
-    color: wheat;
+    color: #fdfaed;
     opacity: 0.6;
     padding: 10px;
     text-align: center;
@@ -140,7 +143,7 @@ footer{
 
 }
 
-@media(max-width:700px){
+@media(max-width:600px){
     #result{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -178,26 +181,5 @@ footer{
     }
 }
 
-@media(min-width:700px){
-    #result{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr  1fr;
-        margin:7px;
-    }
-}
-@media(min-width:950px){
-    #result{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin:7px;
-    }
-}
-@media(min-width:1350px){
-    #result{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        margin:7px;
-    }
-}
 
 
